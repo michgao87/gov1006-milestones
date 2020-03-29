@@ -2,7 +2,11 @@
 title: "Milestone 5"
 author: "Michelle Gao"
 date: "March 29, 2020"
-output: pdf_document
+citation_package: natbib
+output: bookdown::pdf_document2
+bibliography: bibliography.bib
+nocite: | 
+  @paper, @content_analysis, @ogi, @govt_portals, @receptivity
 ---
 
 ```{r setup, include=FALSE}
@@ -50,4 +54,4 @@ title("Prop. of Chinese County Sites w/ Content Focused on Competence",
 ```
 Fig. 2. Proportion of web pages with content focused on competence by year in office with 95 percent bootstrapped confidence intervals (left panel) and by proximity to leaving office, where Beginning refers to executives within six month of taking office, End refers to executives within six months of leaving office, and Middle everyone in between (right panel). Note: Year 5 includes executives in their fifth and sixth years of office.
 
-
+## Bibliography
