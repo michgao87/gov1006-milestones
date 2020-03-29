@@ -14,6 +14,7 @@ knitr::opts_chunk$set(echo = F)
 
 library(gt)
 library(gtsummary)
+library(stargazer)
 library(tidyverse)
 ```
 
@@ -53,5 +54,52 @@ title("Prop. of Chinese County Sites w/ Content Focused on Competence",
 
 ```
 Fig. 2. Proportion of web pages with content focused on competence by year in office with 95 percent bootstrapped confidence intervals (left panel) and by proximity to leaving office, where Beginning refers to executives within six month of taking office, End refers to executives within six months of leaving office, and Middle everyone in between (right panel). Note: Year 5 includes executives in their fifth and sixth years of office.
+
+## Paper Overview
+
+
+## Appendix
+```{r}
+bycounty2 <- read.csv("rep-paper/predict.csv")
+
+# Table 3 (1)
+mod3.1 <- lm(comp ~ mayor_first + mayor_last, data=bycounty2)  # ALMOST: mayo first yr more compolence
+
+# Table 3 (2)
+mod3.2 <-lm(comp ~ mayor_first +mayor_last +X2009_gdppc_cny+X2010_illiterateprop+itemploy + linksall+ county_mediaexp, data=bycounty2)
+
+# Table 3 (3)
+mod3.3 <- lm(comp ~ mayor_first + mayor_last + X2009_gdppc_cny + X2010_illiterateprop+itemploy + linksall+ county_mediaexp + sec_first + sec_last, data=bycounty2) 
+
+# Table 3 (4)
+mod3.4 <- lm(comp ~ mayor_first + mayor_last + X2009_gdppc_cny + X2010_illiterateprop+itemploy + linksall+ county_mediaexp + sec_first + sec_last + pref_ps_first + pref_ps_last + pref_ps_edulevel + pref_2010_gdppc, data=bycounty2)
+
+# Table 3 (5)
+mod3.5 <- lm(comp ~ mayor_first + mayor_last + X2009_gdppc_cny + X2010_illiterateprop+itemploy + linksall+ county_mediaexp + sec_first + sec_last + pref_ps_first + pref_ps_last + pref_ps_edulevel + pref_2010_gdppc + mayor_age + mayor_gender + mayor_edulevel, data=bycounty2)
+
+# Table 3 (6)
+mod3.6 <- lm(comp ~ mayor_first + mayor_last + X2009_gdppc_cny + X2010_illiterateprop+itemploy + linksall+ county_mediaexp + sec_first + sec_last + pref_ps_first + pref_ps_last + pref_ps_edulevel + pref_2010_gdppc + mayor_age + mayor_gender + mayor_edulevel+ mayor_promote, data=bycounty2)
+
+```
+
+
+```{r results = "asis"}
+stargazer(mod3.1, mod3.2, mod3.3, mod3.4, mod3.5, mod3.6, 
+          type = "latex", header = F, no.space = T, notes.align = "l",
+          keep.stat = "n",
+          keep = c("mayor_first", "mayor_last", "Constant"),
+          covariate.labels = c("Beginning Tenure", "End Tenure", "Constant"),
+          dep.var.labels = "Dependent Variable: Competence",
+          dep.var.caption = "",
+          add.lines = list(c("Resource controls", "No", "Yes", "Yes", "Yes", "Yes", "Yes"),
+                           c("Peer controls", "No", "No", "Yes", "Yes", "Yes", "Yes"),
+                           c("Prefecture controls", "No", "No", "No", "Yes", "Yes", "Yes"),
+                           c("Ability controls", "No", "No", "No", "No", "Yes", "Yes"),
+                           c("Career path controls", "No", "No", "No", "No", "Yes", "Yes")),
+          table.layout = "=dc-tas-n",
+          title = "Regression Results: Competence")
+```
+
+![](competence-regression-table.png)
 
 ## Bibliography
