@@ -1,0 +1,301 @@
+topic	label	word_cn	word_en	freq
+5	Economic development	发展	Development	0.041
+5	Economic development	经济	Economy	0.018
+5	Economic development	产业	Industry	0.017
+5	Economic development	企业	Enterprise	0.015
+5	Economic development	建设	Build	0.012
+5	Economic development	科技	Technology	0.009
+5	Economic development	加快	Accelerate	0.008
+5	Economic development	创新	Innovation	0.007
+5	Economic development	社会	Community	0.007
+5	Economic development	技术	Technology	0.006
+5	Economic development	工业	Industry	0.006
+5	Economic development	规划	Planning	0.006
+5	Economic development	推进	Advance	0.006
+5	Economic development	资源	Resources	0.006
+5	Economic development	旅游	Travel	0.006
+5	Economic development	重点	Emphasis	0.005
+5	Economic development	服务	Service	0.005
+5	Economic development	提高	Increase	0.005
+5	Economic development	市场	Market	0.005
+5	Economic development	化	Change	0.005
+5	Economic development	环境	Environment	0.005
+5	Economic development	服务业	Services Industry	0.004
+5	Economic development	优势	Superior	0.004
+5	Economic development	开发	Open up	0.004
+5	Economic development	实施	Implement	0.004
+5	Economic development	提升	Upgrade	0.004
+5	Economic development	国家	Country	0.004
+5	Economic development	体系	System	0.004
+5	Economic development	文化	Culture	0.004
+5	Economic development	完善	Perfect	0.004
+5	Economic development	生态	Ecology	0.004
+5	Economic development	节能	Energy	0.003
+5	Economic development	战略	Strategy	0.003
+5	Economic development	人才	Talent	0.003
+5	Economic development	产品	Product	0.003
+5	Economic development	进一步	Further	0.003
+5	Economic development	支持	Support	0.003
+5	Economic development	特色	Characteristic	0.003
+5	Economic development	基地	Base	0.003
+5	Economic development	政策	Policy	0.003
+5	Economic development	新	New	0.003
+5	Economic development	增长	Increase	0.003
+5	Economic development	品牌	Brand	0.003
+5	Economic development	基础	Base	0.003
+5	Economic development	水平	Level	0.003
+5	Economic development	科学	Science	0.003
+5	Economic development	目标	Target	0.003
+5	Economic development	强	Strength	0.003
+5	Economic development	推动	Promote	0.003
+5	Economic development	能力	Ability	0.003
+10	Health and social security	医疗	Medical	0.039
+10	Health and social security	保险	Insurance	0.031
+10	Health and social security	劳动	Labor	0.023
+10	Health and social security	保障	Guarantee	0.016
+10	Health and social security	社会	Social	0.015
+10	Health and social security	保	Insurance	0.015
+10	Health and social security	职工	Staff	0.014
+10	Health and social security	机构	Agency	0.014
+10	Health and social security	人员	Staff	0.011
+10	Health and social security	养老	Pension	0.01
+10	Health and social security	元	Yuan	0.01
+10	Health and social security	参	Participate	0.009
+10	Health and social security	医院	Hospital	0.008
+10	Health and social security	卫生	Health	0.008
+10	Health and social security	基金	Fund	0.008
+10	Health and social security	标准	Standard	0.008
+10	Health and social security	费用	Cost	0.008
+10	Health and social security	居民	Resident	0.007
+10	Health and social security	救助	Relief	0.007
+10	Health and social security	用人单位	Employers	0.007
+10	Health and social security	管理	Management	0.007
+10	Health and social security	城镇	Town	0.007
+10	Health and social security	工资	Wage	0.006
+10	Health and social security	合作医疗	Cooperative Health Insurance	0.006
+10	Health and social security	农村	Countryside	0.006
+10	Health and social security	补贴	Subsidy	0.006
+10	Health and social security	补助	Allowance	0.006
+10	Health and social security	支付	Pay	0.006
+10	Health and social security	失业	Unemployment	0.005
+10	Health and social security	合	Combined	0.005
+10	Health and social security	医	Medical	0.005
+10	Health and social security	工伤	Injury	0.005
+10	Health and social security	待遇	Treatment	0.005
+10	Health and social security	定点	Designated	0.005
+10	Health and social security	享受	Enjoy	0.004
+10	Health and social security	参加	Participate	0.004
+10	Health and social security	住院	Hospitalize	0.004
+10	Health and social security	缴费	Payment	0.004
+10	Health and social security	新型	New type	0.004
+10	Health and social security	制度	System	0.004
+10	Health and social security	生活	Live	0.004
+10	Health and social security	劳动者	Worker	0.004
+10	Health and social security	退休	Retirement	0.004
+10	Health and social security	就业	Employment	0.004
+10	Health and social security	补偿	Compensate	0.004
+10	Health and social security	企业	Enterprise	0.004
+10	Health and social security	办法	Method	0.004
+10	Health and social security	发放	Disburse	0.004
+10	Health and social security	服务	Service	0.004
+10	Health and social security	费	Fee	0.004
+13	Emergency response	应急	Emergency	0.035
+13	Emergency response	事件	Incident	0.018
+13	Emergency response	工作	Work	0.015
+13	Emergency response	突发	Sudden	0.014
+13	Emergency response	灾害	Disaster	0.013
+13	Emergency response	预	Advance	0.012
+13	Emergency response	案	Case	0.011
+13	Emergency response	信息	Information	0.011
+13	Emergency response	组织	Organization	0.01
+13	Emergency response	地震	Earthquake	0.009
+13	Emergency response	防汛	Flood Control	0.008
+13	Emergency response	处置	Disposal	0.008
+13	Emergency response	发生	Occurrence	0.008
+13	Emergency response	公共	Public	0.007
+13	Emergency response	事故	Accident	0.007
+13	Emergency response	人员	Staff	0.007
+13	Emergency response	报告	Report	0.007
+13	Emergency response	负责	Is responsible	0.007
+13	Emergency response	救援	Rescue	0.007
+13	Emergency response	防	Prevent	0.006
+13	Emergency response	监测	Monitor	0.006
+13	Emergency response	卫生	Health	0.006
+13	Emergency response	指挥部	Headquarters	0.006
+13	Emergency response	地质	Geology	0.005
+13	Emergency response	做好	Make	0.005
+13	Emergency response	现场	Site	0.005
+13	Emergency response	措施	Measure	0.005
+13	Emergency response	疫情	Epidemic	0.005
+13	Emergency response	情况	Situation	0.005
+13	Emergency response	点	Locations	0.005
+13	Emergency response	错误	Mistake	0.005
+13	Emergency response	保障	Guarantee	0.004
+13	Emergency response	指挥	Command	0.004
+13	Emergency response	防治	Prevention and control	0.004
+13	Emergency response	社会	Community	0.004
+13	Emergency response	预警	Warning	0.004
+13	Emergency response	预防	Prevention	0.004
+13	Emergency response	物资	Materials	0.004
+13	Emergency response	相关	Relevant	0.004
+13	Emergency response	控制	Control	0.004
+13	Emergency response	单位	Unit	0.004
+13	Emergency response	灾区	Disaster area	0.004
+13	Emergency response	救灾	Relief	0.004
+13	Emergency response	有关部门	Departments	0.004
+13	Emergency response	队伍	Contingent	0.004
+13	Emergency response	紧急	Urgent	0.003
+13	Emergency response	机构	Agency	0.003
+13	Emergency response	抢险	Rescue	0.003
+13	Emergency response	管理	Management	0.003
+13	Emergency response	请	Requested	0.003
+19	Government approval process	申请	Application	0.025
+19	Government approval process	登记	Register	0.024
+19	Government approval process	办理	Handle	0.016
+19	Government approval process	机关	Government organ	0.015
+19	Government approval process	行政	Administration	0.013
+19	Government approval process	材料	Material	0.011
+19	Government approval process	法律	Law	0.01
+19	Government approval process	事项	Item	0.01
+19	Government approval process	证明	Proof	0.01
+19	Government approval process	受理	Be accepted	0.01
+19	Government approval process	审批	Approval	0.01
+19	Government approval process	许可	License	0.009
+19	Government approval process	机构	Agency	0.008
+19	Government approval process	变更	Change	0.008
+19	Government approval process	提交	Submit	0.008
+19	Government approval process	申请人	Applicant	0.008
+19	Government approval process	合同	Contract	0.007
+19	Government approval process	程序	Procedure	0.007
+19	Government approval process	行政机关	Administrative organ	0.006
+19	Government approval process	文件	File	0.006
+19	Government approval process	复印件	Photocopy	0.006
+19	Government approval process	人的	Human	0.006
+19	Government approval process	提供	Provide	0.006
+19	Government approval process	法人	Legal person	0.006
+19	Government approval process	单位	Work unit	0.006
+19	Government approval process	企业	Enterprise	0.006
+19	Government approval process	当事人	Party	0.005
+19	Government approval process	管理	Management	0.005
+19	Government approval process	日内	Days	0.005
+19	Government approval process	名称	Name	0.005
+19	Government approval process	法定	Legal	0.005
+19	Government approval process	审查	Examine	0.005
+19	Government approval process	表	Table	0.005
+19	Government approval process	依法	According to the law	0.005
+19	Government approval process	条件	Condition	0.005
+19	Government approval process	复议	Reconsideration	0.005
+19	Government approval process	委托	Entrust	0.005
+19	Government approval process	作出	Make	0.005
+19	Government approval process	之日起	Date of	0.004
+19	Government approval process	备案	Put on record	0.004
+19	Government approval process	依据	Basis	0.004
+19	Government approval process	法	Law	0.004
+19	Government approval process	经营	Operate	0.004
+19	Government approval process	证	Certificate	0.004
+19	Government approval process	批准	Approve	0.004
+19	Government approval process	资料	Data	0.004
+19	Government approval process	情况	Situation	0.004
+19	Government approval process	组织	Organization	0.004
+19	Government approval process	书	Book	0.004
+19	Government approval process	设立	Set up	0.004
+6	Public procurement and tenders	招标	Tender	0.033
+6	Public procurement and tenders	萧	Sell	0.031
+6	Public procurement and tenders	采购	Purchase	0.027
+6	Public procurement and tenders	怀	Belong	0.023
+6	Public procurement and tenders	投标	Bid	0.021
+6	Public procurement and tenders	山	Remove	0.02
+6	Public procurement and tenders	信息	Information	0.017
+6	Public procurement and tenders	项目	Project	0.013
+6	Public procurement and tenders	公告	Announcement	0.011
+6	Public procurement and tenders	山区	District	0.011
+6	Public procurement and tenders	中心	Center	0.011
+6	Public procurement and tenders	中标	Win bid	0.009
+6	Public procurement and tenders	标	Mark	0.009
+6	Public procurement and tenders	文件	File	0.008
+6	Public procurement and tenders	单位	Unit	0.008
+6	Public procurement and tenders	沙	Sand	0.006
+6	Public procurement and tenders	服务	Service	0.006
+6	Public procurement and tenders	公	Public	0.006
+6	Public procurement and tenders	统计	Statistics	0.005
+6	Public procurement and tenders	江	River	0.005
+6	Public procurement and tenders	评	Comment	0.005
+6	Public procurement and tenders	示	Show	0.005
+6	Public procurement and tenders	报名	Sign up	0.005
+6	Public procurement and tenders	位置	Location	0.005
+6	Public procurement and tenders	公开	Public	0.005
+6	Public procurement and tenders	附件	Attachment	0.005
+6	Public procurement and tenders	工程	Engineer	0.005
+6	Public procurement and tenders	发布	Release	0.004
+6	Public procurement and tenders	投标人	Bidders	0.004
+6	Public procurement and tenders	余	Surplus	0.004
+6	Public procurement and tenders	方式	Mode	0.004
+6	Public procurement and tenders	资格	Qualifications	0.004
+6	Public procurement and tenders	量	Amount	0.004
+6	Public procurement and tenders	办事	Work	0.004
+6	Public procurement and tenders	声明	Statement	0.004
+6	Public procurement and tenders	政务	Government affairs	0.004
+6	Public procurement and tenders	错	Wrong	0.004
+6	Public procurement and tenders	价	Price	0.004
+6	Public procurement and tenders	招	Recruit	0.004
+6	Public procurement and tenders	干	Do	0.004
+6	Public procurement and tenders	供应商	Supplier	0.004
+6	Public procurement and tenders	建议	Proposal	0.004
+6	Public procurement and tenders	标题	Title	0.004
+6	Public procurement and tenders	纠	Correct	0.004
+6	Public procurement and tenders	动态	Dynamic	0.004
+6	Public procurement and tenders	地点	Location	0.004
+6	Public procurement and tenders	有限公司	"Co., Ltd."	0.003
+6	Public procurement and tenders	联系人	Contact	0.003
+6	Public procurement and tenders	元	Yuan	0.003
+6	Public procurement and tenders	相关	Relate	0.003
+34	Land rights and housing	土地	Land	0.041
+34	Land rights and housing	管理	Management	0.015
+34	Land rights and housing	档案	Dossier	0.015
+34	Land rights and housing	建设	Build	0.015
+34	Land rights and housing	房屋	Houses	0.011
+34	Land rights and housing	住房	Housing	0.011
+34	Land rights and housing	用地	Land	0.011
+34	Land rights and housing	资源	Resources	0.01
+34	Land rights and housing	单位	Unit	0.009
+34	Land rights and housing	使用权	Use rights	0.009
+34	Land rights and housing	国土	Land	0.009
+34	Land rights and housing	林业	Forestry	0.009
+34	Land rights and housing	国有	State-owned	0.008
+34	Land rights and housing	承包	Contract	0.007
+34	Land rights and housing	房地产	Real estate	0.007
+34	Land rights and housing	出让	Grant	0.007
+34	Land rights and housing	林	Forest	0.007
+34	Land rights and housing	收费	Charge	0.007
+34	Land rights and housing	权	Right	0.006
+34	Land rights and housing	物业	Property	0.006
+34	Land rights and housing	拆迁	Demolition	0.006
+34	Land rights and housing	森林	Forest	0.006
+34	Land rights and housing	开发	Develop	0.005
+34	Land rights and housing	标准	Standard	0.005
+34	Land rights and housing	集体	Collective	0.005
+34	Land rights and housing	合同	Contract	0.005
+34	Land rights and housing	费	Fee	0.005
+34	Land rights and housing	利用	Use	0.005
+34	Land rights and housing	国家	Country	0.005
+34	Land rights and housing	规划	Planning	0.005
+34	Land rights and housing	业主	Owner	0.004
+34	Land rights and housing	批准	Approve	0.004
+34	Land rights and housing	房	Room	0.004
+34	Land rights and housing	工程	Engineering	0.004
+34	Land rights and housing	项目	Project	0.004
+34	Land rights and housing	主管部门	Leading bureau	0.004
+34	Land rights and housing	办法	Method	0.004
+34	Land rights and housing	转让	Transfer	0.004
+34	Land rights and housing	林木	Forest	0.004
+34	Land rights and housing	补偿	Compensate	0.004
+34	Land rights and housing	元	Yuan	0.004
+34	Land rights and housing	文件	Document	0.004
+34	Land rights and housing	保护	Protection	0.004
+34	Land rights and housing	办理	Handle	0.003
+34	Land rights and housing	征收	Collection	0.003
+34	Land rights and housing	廉	Inexpensive	0.003
+34	Land rights and housing	登记	Register	0.003
+34	Land rights and housing	依法	According to the law	0.003
+34	Land rights and housing	安置	Placement	0.003
+34	Land rights and housing	面积	Area	0.003

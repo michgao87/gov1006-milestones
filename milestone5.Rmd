@@ -1,0 +1,53 @@
+---
+title: "Milestone 5"
+author: "Michelle Gao"
+date: "March 29, 2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+
+library(gt)
+library(gtsummary)
+library(tidyverse)
+```
+
+## Paper
+
+How Chinese Officials Use the Internet to Construct Their
+Public Image^[All analysis for this paper is available at https://github.com/michgao87/gov1006-milestones]
+
+## Graphic
+```{r}
+yroff <- read.csv("rep-paper/readme_out_yroff.csv", header=TRUE)
+tenure <- read.csv("rep-paper/readme_out_tenure.csv", header=TRUE)
+yaxtloc <- c(0,.1,.2,.3,.4,.5)
+laxtlab <- c("0%", "10%","20%","30%","40%","50%")
+xaxtloc <- c(0,.2,.4,.6,.8,1)
+lxaxtlab <- c("Beginning", "Middle","End")
+
+# Fig 2: Proportion of web pages with content focused on competence   
+par(mfrow=c(1,2)) 
+plot(1:5, yroff[1:5,]$estimate,ylim=c(0,0.5), pch=16,
+     xlab="Year in Office",ylab="% Web Pages for Competence",
+     cex=1, cex.axis=0.8, cex.lab=1,yaxt="n")
+axis(2, at= yaxtloc,labels= laxtlab, cex.axis=0.8)
+for(i in 1:5){
+	segments(i,yroff[i,]$lwr,i,yroff[i,]$upr, lwd=2)
+}
+plot(1:3, tenure[1:3,]$estimate,ylim=c(0,0.5), pch=16,
+     xlab="Proximity to Leaving Office",ylab="% Web Pages for Competence",
+     cex=1, cex.axis=1, cex.lab=1, xaxt="n",xlim=c(0.8,3.2),yaxt="n")
+axis(2, at= yaxtloc,labels= laxtlab, cex.axis=0.8)
+axis(1,at=c(1,2,3),labels= lxaxtlab,cex.axis=0.8)
+for(i in 1:3){
+	segments(i,tenure[i,]$lwr,i,tenure[i,]$upr, lwd=2)
+}
+title("Prop. of Chinese County Sites w/ Content Focused on Competence",
+      outer = T, line = -1)
+
+```
+Fig. 2. Proportion of web pages with content focused on competence by year in office with 95 percent bootstrapped confidence intervals (left panel) and by proximity to leaving office, where Beginning refers to executives within six month of taking office, End refers to executives within six months of leaving office, and Middle everyone in between (right panel). Note: Year 5 includes executives in their fifth and sixth years of office.
+
+

@@ -1,0 +1,471 @@
+[1] 2867    5
+[1] 80  5
+[1] 2787
+[1] 20
+
+         Anhui        Beijing      Chongqing         Fujian          Gansu 
+   0.000000000    0.000000000    0.000000000    0.011904762    0.058139535 
+     Guangdong        Guangxi        Guizhou         Hainan          Hebei 
+   0.000000000    0.036697248    0.011363636    0.000000000    0.011627907 
+  Heilongjiang          Henan          Hubei          Hunan Inner Mongolia 
+   0.022727273    0.006289308    0.019417476    0.016260163    0.049019608 
+       Jiangsu        Jiangxi          Jilin       Liaoning        Ningxia 
+   0.018691589    0.000000000    0.000000000    0.040000000    0.047619048 
+       Qinghai        Shaanxi       Shandong       Shanghai         Shanxi 
+   0.023255814    0.000000000    0.007142857    0.000000000    0.033613445 
+       Sichuan        Tianjin          Tibet       Xinjiang         Yunnan 
+   0.027624309    0.000000000    0.418918919    0.039215686    0.007751938 
+      Zhejiang 
+   0.000000000 
+ [1] "countyurl"            "county_en"            "prefecture_en"       
+ [4] "province_en"          "county_cn"            "prefecture_cn"       
+ [7] "cntygb00"             "macroregion"          "countytype"          
+[10] "linksall"             "linksint"             "links_chtxt"         
+[13] "links_include"        "X2009_gdppc_cny"      "X2010_illiterateprop"
+[16] "sec_2011"             "mayor_gender"         "mayor_birth"         
+[19] "mayor_2011"           "mayor_tenure2"        "mayor_edulevel"      
+[22] "mayor_status"         "pref_ps_2011"         "pref_ps_edulevel"    
+[25] "pref_2010_gdppc"      "itemploy"             "county_mediaexp"     
+[1] 29
+
+  County District 
+      61       39 
+
+Central    East    West 
+     31      35      34 
+[1] 2015061
+[1] 1547239
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+     49    3099    6989   18870   25050  162400 
+
+FALSE  TRUE 
+   29    71 
+ [1] "topic"  "label"  "ogi"    "word1"  "word2"  "word3"  "word4"  "word5"  "word6" 
+[10] "word7"  "word8"  "word9"  "word10" "word11" "word12" "word13" "word14" "word15"
+[19] "word16" "word17" "word18" "word19" "word20" "word21" "word22" "word23" "word24"
+[28] "word25" "word26" "word27" "word28" "word29" "word30" "word31" "word32" "word33"
+[37] "word34" "word35" "word36" "word37" "word38" "word39" "word40" "word41" "word42"
+[46] "word43" "word44" "word45" "word46" "word47" "word48" "word49" "word50"
+[1] 50 53
+
+FALSE  TRUE 
+   39    11 
+[1] "business taxation"     "regulations and forms"
+[1] "new socialist countryside" "economic development"      "regional development"     
+[4] "agriculture"               "development"              
+[1] "government statistics"
+[1] "fiscal administration"
+[1] "public procurement and tenders"
+[1] "government approval process"
+[1] "development projects and construction" "construction"                         
+[1] "land rights and housing"
+[1] "health and nutrition"       "health and social security"
+[3] "education"                  "public employment"         
+[1] "emergency response"
+[1] "controls on food and drug production"
+ [1] "family planning"                    "local government office"           
+ [3] "information openness"               "investment information"            
+ [5] "workplace safety"                   "traffic and transportation"        
+ [7] "government committees and leaders"  "media"                             
+ [9] "community government organizations" "surnames"                          
+[11] "Xinhua news"                        "cultural activities and channels"  
+[13] "prosperous government"              "building civilized publics"        
+[15] "student sports competitions"        "government openness"               
+[17] "government services"                "CCP members and committees"        
+[19] "government oversight"              
+
+ 1  2  3  4  5  6 
+21 16 17  8  6  3 
+   
+              in office promotion retired_demoted
+  1 0.0000000 1.0000000 0.0000000       0.0000000
+  2 0.0000000 0.6875000 0.2500000       0.0625000
+  3 0.0000000 0.5882353 0.2352941       0.1764706
+  4 0.0000000 0.2500000 0.5000000       0.2500000
+  5 0.0000000 0.0000000 0.8333333       0.1666667
+  6 0.0000000 0.0000000 0.6666667       0.3333333
+
+ 1  2  3 
+21 38 12 
+
+Call:
+lm(formula = comp ~ mayor_first + mayor_last, data = bycounty2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.23237 -0.10395 -0.03081  0.07351  0.54059 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  0.16068    0.02547   6.310 2.43e-08 ***
+mayor_first  0.04311    0.04268   1.010  0.31605    
+mayor_last   0.14639    0.05198   2.816  0.00635 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.157 on 68 degrees of freedom
+Multiple R-squared:  0.1049,	Adjusted R-squared:  0.07857 
+F-statistic: 3.985 on 2 and 68 DF,  p-value: 0.0231
+
+
+Call:
+lm(formula = comp ~ mayor_first + mayor_last + X2009_gdppc_cny + 
+    X2010_illiterateprop + itemploy + linksall + county_mediaexp, 
+    data = bycounty2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.23339 -0.11119 -0.02669  0.06761  0.53255 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)           1.946e-01  4.925e-02   3.951 0.000202 ***
+mayor_first           5.034e-02  4.755e-02   1.059 0.293908    
+mayor_last            1.395e-01  5.430e-02   2.569 0.012633 *  
+X2009_gdppc_cny      -4.670e-07  8.993e-07  -0.519 0.605398    
+X2010_illiterateprop -4.415e-03  4.154e-03  -1.063 0.292046    
+itemploy             -1.273e-04  6.624e-05  -1.922 0.059236 .  
+linksall              1.738e-07  4.072e-07   0.427 0.671002    
+county_mediaexp       6.016e-07  5.202e-07   1.156 0.251924    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.159 on 62 degrees of freedom
+  (1 observation deleted due to missingness)
+Multiple R-squared:  0.1609,	Adjusted R-squared:  0.06618 
+F-statistic: 1.699 on 7 and 62 DF,  p-value: 0.1259
+
+
+Call:
+lm(formula = comp ~ mayor_first + mayor_last + X2009_gdppc_cny + 
+    X2010_illiterateprop + itemploy + linksall + county_mediaexp + 
+    sec_first + sec_last, data = bycounty2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.24888 -0.10805 -0.02885  0.07246  0.54326 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)           1.885e-01  5.207e-02   3.620 0.000607 ***
+mayor_first           4.878e-02  4.869e-02   1.002 0.320439    
+mayor_last            1.346e-01  5.900e-02   2.281 0.026131 *  
+X2009_gdppc_cny      -4.356e-07  9.174e-07  -0.475 0.636638    
+X2010_illiterateprop -4.507e-03  4.250e-03  -1.060 0.293213    
+itemploy             -1.294e-04  7.088e-05  -1.825 0.072929 .  
+linksall              1.844e-07  4.143e-07   0.445 0.657899    
+county_mediaexp       5.925e-07  5.369e-07   1.104 0.274166    
+sec_first             2.644e-02  6.030e-02   0.438 0.662632    
+sec_last              1.334e-02  4.900e-02   0.272 0.786467    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1613 on 60 degrees of freedom
+  (1 observation deleted due to missingness)
+Multiple R-squared:  0.1641,	Adjusted R-squared:  0.03868 
+F-statistic: 1.308 on 9 and 60 DF,  p-value: 0.2518
+
+
+Call:
+lm(formula = comp ~ mayor_first + mayor_last + X2009_gdppc_cny + 
+    X2010_illiterateprop + itemploy + linksall + county_mediaexp + 
+    sec_first + sec_last + pref_ps_first + pref_ps_last + pref_ps_edulevel + 
+    pref_2010_gdppc, data = bycounty2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.22628 -0.09674 -0.01566  0.08395  0.55082 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)  
+(Intercept)           2.482e-01  1.240e-01   2.002   0.0503 .
+mayor_first           6.171e-02  5.713e-02   1.080   0.2848  
+mayor_last            1.496e-01  6.347e-02   2.357   0.0221 *
+X2009_gdppc_cny      -2.026e-07  9.742e-07  -0.208   0.8360  
+X2010_illiterateprop -4.226e-03  4.986e-03  -0.848   0.4004  
+itemploy             -1.130e-04  7.667e-05  -1.473   0.1465  
+linksall              1.134e-07  4.334e-07   0.262   0.7945  
+county_mediaexp       5.691e-07  5.772e-07   0.986   0.3286  
+sec_first             3.171e-02  6.437e-02   0.493   0.6242  
+sec_last              2.422e-02  5.299e-02   0.457   0.6495  
+pref_ps_first        -1.585e-02  5.999e-02  -0.264   0.7926  
+pref_ps_last          5.543e-02  6.900e-02   0.803   0.4253  
+pref_ps_edulevel     -1.714e-02  2.436e-02  -0.704   0.4845  
+pref_2010_gdppc      -6.274e-07  1.078e-06  -0.582   0.5631  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1657 on 54 degrees of freedom
+  (3 observations deleted due to missingness)
+Multiple R-squared:  0.1943,	Adjusted R-squared:  0.0003224 
+F-statistic: 1.002 on 13 and 54 DF,  p-value: 0.4628
+
+
+Call:
+lm(formula = comp ~ mayor_first + mayor_last + X2009_gdppc_cny + 
+    X2010_illiterateprop + itemploy + linksall + county_mediaexp + 
+    sec_first + sec_last + pref_ps_first + pref_ps_last + pref_ps_edulevel + 
+    pref_2010_gdppc + mayor_age + mayor_gender + mayor_edulevel, 
+    data = bycounty2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.16288 -0.06513 -0.01775  0.05532  0.31589 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)  
+(Intercept)           4.314e-01  2.912e-01   1.481   0.1486  
+mayor_first          -4.641e-02  6.883e-02  -0.674   0.5052  
+mayor_last            1.604e-01  7.324e-02   2.190   0.0362 *
+X2009_gdppc_cny       6.820e-07  9.737e-07   0.700   0.4889  
+X2010_illiterateprop -7.585e-04  4.786e-03  -0.158   0.8751  
+itemploy              1.413e-05  7.569e-05   0.187   0.8532  
+linksall              1.633e-07  4.902e-07   0.333   0.7412  
+county_mediaexp      -4.532e-07  6.557e-07  -0.691   0.4946  
+sec_first             1.559e-01  6.298e-02   2.475   0.0190 *
+sec_last              2.649e-02  5.705e-02   0.464   0.6456  
+pref_ps_first         7.415e-02  7.844e-02   0.945   0.3518  
+pref_ps_last          1.117e-01  7.012e-02   1.593   0.1214  
+pref_ps_edulevel     -5.084e-02  2.887e-02  -1.761   0.0881 .
+pref_2010_gdppc      -7.180e-07  1.212e-06  -0.592   0.5579  
+mayor_age            -5.675e-03  6.147e-03  -0.923   0.3630  
+mayor_genderM        -8.146e-02  1.007e-01  -0.809   0.4248  
+mayor_edulevel        6.519e-02  2.943e-02   2.215   0.0342 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1327 on 31 degrees of freedom
+  (23 observations deleted due to missingness)
+Multiple R-squared:  0.4683,	Adjusted R-squared:  0.1938 
+F-statistic: 1.706 on 16 and 31 DF,  p-value: 0.09876
+
+
+Call:
+lm(formula = comp ~ mayor_first + mayor_last + X2009_gdppc_cny + 
+    X2010_illiterateprop + itemploy + linksall + county_mediaexp + 
+    sec_first + sec_last + pref_ps_first + pref_ps_last + pref_ps_edulevel + 
+    pref_2010_gdppc + mayor_age + mayor_gender + mayor_edulevel + 
+    mayor_promote, data = bycounty2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.17399 -0.06674 -0.01486  0.05588  0.31450 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)  
+(Intercept)           4.604e-01  3.028e-01   1.521   0.1388  
+mayor_first          -5.193e-02  7.094e-02  -0.732   0.4698  
+mayor_last            1.837e-01  9.209e-02   1.995   0.0552 .
+X2009_gdppc_cny       6.570e-07  9.885e-07   0.665   0.5113  
+X2010_illiterateprop -8.330e-04  4.853e-03  -0.172   0.8649  
+itemploy              1.554e-05  7.678e-05   0.202   0.8410  
+linksall              2.132e-07  5.102e-07   0.418   0.6790  
+county_mediaexp      -4.566e-07  6.645e-07  -0.687   0.4972  
+sec_first             1.514e-01  6.468e-02   2.341   0.0261 *
+sec_last              2.805e-02  5.793e-02   0.484   0.6318  
+pref_ps_first         8.039e-02  8.082e-02   0.995   0.3278  
+pref_ps_last          1.129e-01  7.112e-02   1.587   0.1229  
+pref_ps_edulevel     -5.135e-02  2.928e-02  -1.754   0.0897 .
+pref_2010_gdppc      -7.593e-07  1.232e-06  -0.616   0.5423  
+mayor_age            -6.224e-03  6.360e-03  -0.979   0.3356  
+mayor_genderM        -8.399e-02  1.022e-01  -0.822   0.4178  
+mayor_edulevel        6.708e-02  3.015e-02   2.225   0.0337 *
+mayor_promote        -3.047e-02  7.114e-02  -0.428   0.6715  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1345 on 30 degrees of freedom
+  (23 observations deleted due to missingness)
+Multiple R-squared:  0.4715,	Adjusted R-squared:  0.172 
+F-statistic: 1.574 on 17 and 30 DF,  p-value: 0.1349
+
+
+Call:
+lm(formula = benev ~ mayor_first + mayor_last, data = bycounty2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.24657 -0.12720 -0.05331  0.10485  0.47075 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  0.187569   0.027551   6.808 3.14e-09 ***
+mayor_first  0.071345   0.046179   1.545    0.127    
+mayor_last  -0.002551   0.056238  -0.045    0.964    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1698 on 68 degrees of freedom
+Multiple R-squared:  0.0376,	Adjusted R-squared:  0.009297 
+F-statistic: 1.328 on 2 and 68 DF,  p-value: 0.2717
+
+
+Call:
+lm(formula = benev ~ mayor_first + mayor_last + X2009_gdppc_cny + 
+    X2010_illiterateprop + itemploy + linksall + county_mediaexp, 
+    data = bycounty2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.20851 -0.11610 -0.04187  0.09634  0.42708 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)   
+(Intercept)           1.519e-01  5.195e-02   2.924  0.00483 **
+mayor_first           1.010e-01  5.016e-02   2.013  0.04846 * 
+mayor_last            2.802e-02  5.728e-02   0.489  0.62650   
+X2009_gdppc_cny      -4.928e-07  9.486e-07  -0.519  0.60528   
+X2010_illiterateprop  3.382e-03  4.382e-03   0.772  0.44321   
+itemploy              3.329e-05  6.987e-05   0.477  0.63539   
+linksall              3.475e-07  4.295e-07   0.809  0.42167   
+county_mediaexp      -1.975e-07  5.488e-07  -0.360  0.72018   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1677 on 62 degrees of freedom
+  (1 observation deleted due to missingness)
+Multiple R-squared:  0.09059,	Adjusted R-squared:  -0.01209 
+F-statistic: 0.8823 on 7 and 62 DF,  p-value: 0.5258
+
+
+Call:
+lm(formula = benev ~ mayor_first + mayor_last + X2009_gdppc_cny + 
+    X2010_illiterateprop + itemploy + linksall + county_mediaexp + 
+    sec_first + sec_last, data = bycounty2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.21502 -0.12119 -0.04231  0.09507  0.43619 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)   
+(Intercept)           1.549e-01  5.497e-02   2.819  0.00652 **
+mayor_first           9.880e-02  5.140e-02   1.922  0.05934 . 
+mayor_last            3.541e-02  6.228e-02   0.569  0.57174   
+X2009_gdppc_cny      -5.212e-07  9.684e-07  -0.538  0.59245   
+X2010_illiterateprop  3.585e-03  4.487e-03   0.799  0.42743   
+itemploy              4.202e-05  7.482e-05   0.562  0.57652   
+linksall              3.386e-07  4.374e-07   0.774  0.44189   
+county_mediaexp      -2.346e-07  5.667e-07  -0.414  0.68032   
+sec_first             7.998e-03  6.365e-02   0.126  0.90042   
+sec_last             -1.627e-02  5.173e-02  -0.314  0.75427   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1703 on 60 degrees of freedom
+  (1 observation deleted due to missingness)
+Multiple R-squared:  0.09267,	Adjusted R-squared:  -0.04343 
+F-statistic: 0.6809 on 9 and 60 DF,  p-value: 0.723
+
+
+Call:
+lm(formula = benev ~ mayor_first + mayor_last + X2009_gdppc_cny + 
+    X2010_illiterateprop + itemploy + linksall + county_mediaexp + 
+    sec_first + sec_last + pref_ps_first + pref_ps_last + pref_ps_edulevel + 
+    pref_2010_gdppc, data = bycounty2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.22390 -0.12500 -0.03226  0.09301  0.43064 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)  
+(Intercept)           8.463e-02  1.319e-01   0.641   0.5239  
+mayor_first           1.262e-01  6.080e-02   2.076   0.0427 *
+mayor_last            3.964e-02  6.755e-02   0.587   0.5598  
+X2009_gdppc_cny      -5.342e-07  1.037e-06  -0.515   0.6085  
+X2010_illiterateprop  5.591e-03  5.307e-03   1.054   0.2967  
+itemploy              4.671e-05  8.160e-05   0.572   0.5695  
+linksall              3.786e-07  4.612e-07   0.821   0.4154  
+county_mediaexp      -2.927e-07  6.143e-07  -0.476   0.6357  
+sec_first            -1.028e-02  6.851e-02  -0.150   0.8812  
+sec_last             -2.550e-02  5.640e-02  -0.452   0.6530  
+pref_ps_first         4.784e-02  6.385e-02   0.749   0.4569  
+pref_ps_last          1.118e-02  7.344e-02   0.152   0.8796  
+pref_ps_edulevel      9.497e-03  2.592e-02   0.366   0.7155  
+pref_2010_gdppc       4.677e-07  1.148e-06   0.408   0.6853  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1764 on 54 degrees of freedom
+  (3 observations deleted due to missingness)
+Multiple R-squared:  0.1186,	Adjusted R-squared:  -0.09364 
+F-statistic: 0.5587 on 13 and 54 DF,  p-value: 0.8754
+
+
+Call:
+lm(formula = benev ~ mayor_first + mayor_last + X2009_gdppc_cny + 
+    X2010_illiterateprop + itemploy + linksall + county_mediaexp + 
+    sec_first + sec_last + pref_ps_first + pref_ps_last + pref_ps_edulevel + 
+    pref_2010_gdppc + mayor_age + mayor_gender + mayor_edulevel, 
+    data = bycounty2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.23014 -0.09100 -0.02571  0.09339  0.41045 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)
+(Intercept)           1.791e-01  4.011e-01   0.446    0.658
+mayor_first           1.541e-01  9.482e-02   1.626    0.114
+mayor_last            2.924e-02  1.009e-01   0.290    0.774
+X2009_gdppc_cny      -1.723e-06  1.341e-06  -1.284    0.209
+X2010_illiterateprop  3.574e-03  6.592e-03   0.542    0.592
+itemploy              1.622e-05  1.043e-04   0.156    0.877
+linksall              9.157e-07  6.752e-07   1.356    0.185
+county_mediaexp       1.629e-07  9.032e-07   0.180    0.858
+sec_first             3.716e-02  8.676e-02   0.428    0.671
+sec_last              1.042e-02  7.858e-02   0.133    0.895
+pref_ps_first         1.656e-02  1.081e-01   0.153    0.879
+pref_ps_last         -1.853e-02  9.659e-02  -0.192    0.849
+pref_ps_edulevel     -1.462e-02  3.977e-02  -0.368    0.716
+pref_2010_gdppc       1.628e-07  1.670e-06   0.098    0.923
+mayor_age            -1.871e-03  8.468e-03  -0.221    0.827
+mayor_genderM         1.203e-01  1.387e-01   0.867    0.393
+mayor_edulevel       -6.599e-03  4.054e-02  -0.163    0.872
+
+Residual standard error: 0.1828 on 31 degrees of freedom
+  (23 observations deleted due to missingness)
+Multiple R-squared:  0.2245,	Adjusted R-squared:  -0.1758 
+F-statistic: 0.5609 on 16 and 31 DF,  p-value: 0.8889
+
+
+Call:
+lm(formula = benev ~ mayor_first + mayor_last + X2009_gdppc_cny + 
+    X2010_illiterateprop + itemploy + linksall + county_mediaexp + 
+    sec_first + sec_last + pref_ps_first + pref_ps_last + pref_ps_edulevel + 
+    pref_2010_gdppc + mayor_age + mayor_gender + mayor_edulevel + 
+    mayor_promote, data = bycounty2)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.20329 -0.12032 -0.01405  0.09501  0.42859 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)  
+(Intercept)           5.064e-02  4.050e-01   0.125   0.9013  
+mayor_first           1.785e-01  9.489e-02   1.881   0.0697 .
+mayor_last           -7.402e-02  1.232e-01  -0.601   0.5524  
+X2009_gdppc_cny      -1.612e-06  1.322e-06  -1.219   0.2323  
+X2010_illiterateprop  3.903e-03  6.492e-03   0.601   0.5522  
+itemploy              9.961e-06  1.027e-04   0.097   0.9234  
+linksall              6.951e-07  6.825e-07   1.018   0.3166  
+county_mediaexp       1.781e-07  8.889e-07   0.200   0.8426  
+sec_first             5.694e-02  8.652e-02   0.658   0.5155  
+sec_last              3.550e-03  7.749e-02   0.046   0.9638  
+pref_ps_first        -1.104e-02  1.081e-01  -0.102   0.9193  
+pref_ps_last         -2.385e-02  9.514e-02  -0.251   0.8038  
+pref_ps_edulevel     -1.236e-02  3.917e-02  -0.316   0.7545  
+pref_2010_gdppc       3.454e-07  1.648e-06   0.210   0.8354  
+mayor_age             5.575e-04  8.508e-03   0.066   0.9482  
+mayor_genderM         1.315e-01  1.368e-01   0.961   0.3440  
+mayor_edulevel       -1.495e-02  4.033e-02  -0.371   0.7134  
+mayor_promote         1.348e-01  9.516e-02   1.416   0.1670  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1799 on 30 degrees of freedom
+  (23 observations deleted due to missingness)
+Multiple R-squared:  0.2731,	Adjusted R-squared:  -0.1388 
+F-statistic: 0.663 on 17 and 30 DF,  p-value: 0.8123
+
